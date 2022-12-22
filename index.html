@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loader</title>
+</head>
+
+<body>
+    <video autoplay muted>
+        <source src="videos/loading.mp4" type="video/mp4">
+    </video>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+        video {
+            top: -2.5em;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+
+    <script>
+        var setTimeout;
+
+        setTimeout(function() {
+            location.href = "animation.html";
+        }, 12000);
+    </script>
+</body>
+
+</html>
